@@ -5,7 +5,7 @@ import PrivateRoute from './components/PrivateRoute';
 // Import LoginPage
 import LoginPage from './components/LoginPage';
 
-import { Home, Vote } from './pages';
+import { Home, Vote, RegisterPage } from './pages';
 
 const App = () => {
   const placeholder = 'https://example.com/placeholder.jpg';
@@ -28,6 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/vote" element={<Vote />} />
+          <Route path="/register" element={<RegisterPage />} />
         </Routes>
       </main>
       {showLoginModal && (
